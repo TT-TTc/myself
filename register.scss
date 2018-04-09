@@ -1,0 +1,368 @@
+$wrapper:1210px;
+$margin:0 auto;
+@mixin tocenter{
+    width: $wrapper;
+    margin: $margin;
+}
+
+
+
+
+#head{ 
+    height: 110px;
+    background: url(../images/headbg.jpg) repeat-x left bottom;
+    .header{
+        @include tocenter;
+        .logo{
+            display: block;
+            float: left;
+            width: 150px;
+            height: 60px;
+            margin-top: 24px;
+            background: url(../images/logbg.png) no-repeat -50px -18px;
+        }
+        .logo_title{
+            float: left;
+            height: 34px;
+            font-size: 24px;
+            color: #333333;
+            padding-left: 20px;
+            margin-top: 34px;
+        }
+        .header_right{
+            font-size: 16px;
+            float: right;
+            margin-top: 55px;
+            color: #999;
+        }
+    }
+    
+}
+#body{
+    @include tocenter;
+    .b_main{
+        margin: 50px auto 60px;
+        width: 830px;
+        .b_left{
+            width: 400px;
+            float: left;
+            input{
+                font-size: 14px; 
+                outline: none;
+                border: none;
+                
+            }
+            .username{
+                position: relative;
+                width: 398px;
+                height: 52px;
+                border: 1px solid #DDDDDD;
+                font-size: 14px;
+                color: #666;
+                .userlabel{
+                    display: inline-block;
+                    width: 90px;
+                    height: 52px;
+                    line-height: 52px;
+                    padding-left: 20px;
+                   
+                }
+                .text1{
+                    position: absolute;
+                    z-index: 2;
+                    line-height: 46px;
+                    margin-left: 20px;
+                    margin-top: 3px;
+                    font-size: 14px;
+                    color: rgb(204,204,204);
+                    display: inline;
+                }
+                .user{
+                    border: 0 none;
+                    font-size: 14px;
+                    width: 190px;
+                    height: 19px;
+                    padding-bottom: 11px;
+                    padding-left: 20px;
+                    padding-top: 16px;
+                    display: inline-block;
+                    //z-index: 10;
+                    
+                    
+                }
+            }
+            .usertitle{
+                color: #c5c5c5;
+                height: 27px;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+            //
+            .pass{
+                @extend .username;
+                label{
+                    @extend .userlabel;
+                }
+                .text2{
+                    @extend .text1;
+                }
+                input{
+                    @extend .user;
+                }
+            }
+            .passtitle{
+                @extend .usertitle;
+            }
+            //
+            .passagain{
+               @extend .username;
+                label{
+                    @extend .userlabel;
+                }
+                .text3{
+                    @extend .text1;
+                }
+                input{
+                    @extend .user;
+                }
+            }
+            .passagaintitle{
+                @extend .usertitle;
+            }
+            //
+            .email{
+               @extend .username;
+                label{
+                    @extend .userlabel;
+                }
+                .text4{
+                    @extend .text1;
+                }
+                input{
+                    @extend .user;
+                }
+            }
+            .emailtitle{
+                @extend .usertitle;
+            }
+            //
+            .phone{
+               @extend .username;
+                label{
+                    @extend .userlabel;
+                    border-right: 1px solid #cccccc;
+                }
+                .text5{
+                    @extend .text1;
+                }
+                input{
+                    @extend .user;
+                }
+            }
+            .phonetitle{
+                @extend .usertitle;
+            }
+            //
+            .yzm{
+               @extend .username;
+                label{
+                    @extend .userlabel;
+                   
+                }
+                .text6{
+                    @extend .text1;
+                }
+                input{
+                    @extend .user;
+                }
+                span{
+                    position: absolute;
+                    display: inline-block;
+                    width: 110px;
+                    height: 46px;
+                    right: 3px;
+                    top: 3px;
+                    background: #f2f2f2;
+                    color: #333333;
+                    text-align: center;
+                    line-height: 46px;
+                }
+            }
+            .yzmtitle{
+                @extend .usertitle;
+            }
+            //按钮
+            .btn{
+                input{
+                    width: 100%;
+                    height: 54px;
+                    color: #FFFFFF;
+                    background: #e22;
+                    font-size: 16px;
+                }
+            }
+            
+        }
+        .b_right{
+            float: left;
+            margin-left: 104px;
+            height: 605px;
+            padding-left: 90px;
+            border-left: solid 1px #e6e6e6;
+            i{
+                 background: url(../images/icon.png) no-repeat;
+            }
+            .company{
+                width:160px;
+                height: 60px;
+                margin-left: 30px;
+                border-bottom: solid 1px #ddd;
+                a{  
+                    display: block;
+                    width: 160px;
+                    height: 30px;
+                    color: #666666;
+                    font-size: 14px;
+                    i{
+                        display: inline-block;
+                        width: 30px;
+                        height: 29px;
+                        vertical-align: middle;
+                        margin-right: 15px;
+                        background-position: 0 -50px;
+                    }
+                }
+                
+            }
+            .internet{
+                width: 160px;
+                margin-left: 30px;
+                margin-top: 30px;
+                a{
+                    display: block;
+                    height: 170px;
+                    height: 40px;
+                    color: #666666;
+                    font-size: 14px;
+                   
+                    i{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        vertical-align: text-bottom;
+                        margin-right: 15px;
+                        margin-top: 7px;
+                        background-position: -50px -50px;
+                        float: left;
+                       
+                    }
+                    span{
+                        display: inline-block;
+                        line-height: 20px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+#foot{
+    @include tocenter;
+    font-size: 12px;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+    color: #999999;
+    padding-bottom: 30px;
+        .linkbox{
+            padding: 30px 0 15px 0;
+            a{
+                color: #999;
+                margin: 0 10px;
+            }
+        }
+        .copyright{
+            font-size: 12px;
+            line-height: 20px;
+        }
+}
+#boxpop{
+    width: 947px;
+    position: fixed;
+    z-index: 10000;
+    display: none;
+    overflow: hidden;
+    top: 11px;
+    left: 154px;
+    border: 4px solid rgba(0,0,0,.1);
+}
+.pophead{
+       width: 927px;
+       font-weight: 700px;
+       position: relative;
+       padding: 0 10px;
+       height: 31px;
+       line-height: 31px;
+       background: #f3f3f3;
+       font-size: 14px;
+        span{
+            line-height: 31px;
+            font-weight: 1000px;
+        }     
+    }
+.popmain{
+    height: 545px;
+    width: 927px;
+    overflow: hidden;
+    padding: 10px;
+    background: #FFFFFF;
+    
+}
+.boxdown{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        z-index: 100000;
+        top: 10px;
+        right: 10px;
+        overflow: hidden;
+        width: 13px;
+        height: 13px;
+        background: url(../images/x.png) no-repeat;
+        background-size: 13px 13px;
+    }
+.main_top{
+    height: 426px;
+    padding: 10px;
+    line-height: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+.main_btm{
+    text-align: center;
+    a{
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        line-height: 54px;
+        color: #999999;
+        vertical-align: middle;
+        margin-right: 30px;
+        background: #e3e4e5;
+        font-size: 16px;
+    }
+    button{
+        display: inline-block;
+        width: 200px;
+        vertical-align: middle;
+        margin: 0 auto;
+        height: 54px;
+        color: #FFFFFF;
+        background: #e22;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        
+    }
+}

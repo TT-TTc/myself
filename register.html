@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<style type="text/css">
+			@import url("css/normalize.css");
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body,html{
+				width: 100%;
+				height: auto;
+				
+			}
+			a{
+				text-decoration: none;
+				color:#000000;
+				outline: none;
+				border: none;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<div class="header">
+				<a class="logo" href="#"></a>
+				<div class="logo_title">欢迎注册</div>
+				<div class="header_right">
+					已有账号？<a href="#">请登录</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<!--中间部分-->
+		<div id="body">
+			<div class="b_main">
+				<div class="b_left">
+					<form action="php/inset.php" method="post">
+						<div class="username">
+							<label class="userlabel">用　户　名</label>
+							<!--<div class="text1">
+								您的账户名和登录名
+							</div>-->
+							<input name="username" class="user focus1 fied" placeholder="您的账户名和登录名" value="" type="text" name="username" id="username" autocomplete="off" maxlength="20"/>
+						</div>
+						<div class="usertitle"></div>
+						<div class="pass">
+							<label>设 置 密 码</label>
+							<!--<div class="text2">
+								建议至少使用两种字符组合
+							</div>-->
+							<input name="password" class="focus2" type="text" placeholder="建议至少使用两种字符组合" name="password" id="password"/>
+						</div>
+						<div class="passtitle"></div>
+						<div class="passagain">
+							<label>确 认 密 码</label>
+							<!--<div class="text3">
+								请再次输入密码
+							</div>-->
+							<input class="focus3" placeholder="请再次输入密码" type="text"/>
+						</div>
+						<div class="passagaintitle"></div>
+						<div class="email">
+							<label>邮 箱 验 证</label>
+							<!--<div class="text4">
+								建议使用常用邮箱
+							</div>-->
+							<input class="focus4" placeholder="建议使用常用邮箱" type="text"/>
+						</div>
+						<div class="emailtitle"></div>
+						<div class="phone">
+							<label>中国 0086v</label>
+							<!--<div class="text5">
+								建议使用常用手机
+							</div>-->
+							<input class="focus5" placeholder="建议使用常用手机" type="text"/>
+						</div>
+						<div class="phonetitle"></div>
+						<div class="yzm">
+							<label>手机验证码</label>
+							<!--<div class="text6">
+								请输入手机验证码
+							</div>-->
+							<input class="focus6" placeholder="请输入手机验证码" type="text" name="yzm" id="yzm"/>
+							<span>获取验证码</span>
+						</div>
+						<div class="yzmtitle"></div>
+						<div class="btn">
+							<input type="submit" id="submit" name="submit" value="立即注册"/>
+						</div>
+						
+					</form>
+				</div>
+				<div class="b_right">
+					<div class="company">
+						<a href="#">
+							<i></i>
+							<span>企业用户注册</span>
+						</a>
+					</div>
+					<div class="internet">
+						<a href="#">
+							<i></i>
+							<span>INTERNATIONAL<br />CUSTOMERS</span>
+							<div style="clear: both;"></div>
+						</a>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="foot">
+			<div class="linkbox">
+				<a href="#">About NetEase</a>&nbsp;|&nbsp;
+				<a href="#">公司简介</a>&nbsp;|&nbsp;
+				<a href="#">联系方式</a>&nbsp;|&nbsp;
+				<a href="#">OAuth2.0认证</a>&nbsp;|&nbsp;
+				<a href="#">招聘信息</a>&nbsp;|&nbsp;
+				<a href="#">客户服务</a>&nbsp;|&nbsp;
+				<a href="#">相关法律</a>&nbsp;|&nbsp;
+				<a href="#">网络营销</a>
+				
+				
+			</div>
+			<div class="copyright">
+        	网易公司版权所有 ©1997-2017
+    </div>
+		</div>
+	<div id="boxpop">
+		<div class="pophead">
+			<span>京东用户注册协议和隐私政策</span>
+		</div>
+		<div class="popmain">
+			<div>
+				<div class="main_top">
+					
+				</div>
+				<div class="main_btm">
+					<a href="index.html">取消</a>
+					<button class="agree">同意并继续</button>
+				</div>
+			</div>
+			
+		</div>
+		<a class="boxdown" href="index.html"></a>
+	</div>
+	</body>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/register.js"></script>
+</html>
